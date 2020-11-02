@@ -1,0 +1,147 @@
+.header{
+	background-color:rgba(128,186,93,.7);
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	z-index:50;
+}
+.header__top{
+	background-color:#34a836;
+	padding:5px 0;
+	text-align:center;
+	font-size:15px;
+}
+.header__top-inner{
+	max-width:1200px;
+	padding:0 15px;
+	margin:0 auto;
+	display:flex;
+	flex-wrap:wrap;
+	justify-content:center;
+	align-items:center;
+}
+
+.header__message{
+	font-weight:bold;
+}
+.header__highlight{
+	color:white;
+}
+.header__btn-select-hothouse{
+	margin-left:10px;
+}
+
+.header__main{
+	padding:10px 40px;
+	display:flex;
+	justify-content:flex-end;
+	align-items:center;
+}
+.header__logo{
+	flex-grow:2;
+}
+
+.header__logo img{
+	width:230px;
+	height:59px;
+}
+.header__navigation{
+
+}
+.header__menu{
+	display:flex;
+	position:relative;
+}
+.header__menu-item{
+	padding:0 15px;
+	position:relative;
+}
+.header__m-i-has-submenu .header__menu-link{
+	padding-right:12px;
+	position:relative;
+}
+.header__m-i-has-submenu .header__menu-link:after{
+	content:'';
+	width:0;
+	height:0;
+	border-style:solid;
+	border-width:4px 3px 0;
+	border-color:white transparent transparent;
+	position:absolute;
+	top:50%;
+	right:0;
+	transform:translateY(-50%);
+	transition:.3;
+}
+.header__m-i-has-submenu .header__menu-link:hover:after{
+	border-color:#325257 transparent transparent;
+}
+.header__menu-link{
+	font-weight:600;
+	color:white;
+}
+.header__menu-link:hover{
+	color:#325257;
+}
+.header__sub-menu{
+	display:flex;
+	flex-wrap:wrap;
+	width:400px;
+	position:absolute;
+	top:45px;
+	left:50%;
+	transform:translateX(-50%);
+	opacity:0;
+	visibility:hidden;
+	z-index:40;
+	background-color:white;
+	border-radius:3px;
+	padding:12px 0;
+}
+.header__sub-menu:after{
+	content:'';
+	position:absolute;
+	width:0;
+	height:0;
+	border-style:solid;
+	border-width:0 18px 18px 18px;
+	border-color: transparent transparent white transparent;
+	top:-10px;
+	right:50%;
+	/*transform:translateX(-50%);*/
+	transition:.3;
+}
+.header__menu-item:hover .header__sub-menu{
+	opacity:1;
+	visibility:visible;
+}
+
+.header__sub-menu-item{
+	flex:0 0 50%;
+}
+.header__sub-menu-item a{
+	font-size:14px;
+	padding:3px 20px;
+	font-weight:normal;
+	color:#222222;
+}
+
+.header__phones{
+	padding:0 30px;
+	color:white;
+	font-weight:bold;
+	flex-grow:2;
+	text-align:right;
+}
+.header__phones a:hover{
+	color:#333333;
+}
+.header__phones-inner{
+	display:inline-block;
+	text-align:left;
+}
+.header__phones-item{
+
+}
+
